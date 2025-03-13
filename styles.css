@@ -4,6 +4,7 @@
     --branco: #FFFFFF;
     --amarelo:#FFCC00;
     --font-principal: "Montserrat";
+    --azul-escuro: #023E73 /*extraí a cor da h2 "fases educacionais" no figma*/
 }
 
 body {
@@ -109,8 +110,11 @@ body {
 }
 
 .fases-educacionais h2 {
+    color: #023E73;
     font-size: 2rem;
     margin-bottom: 1.5rem;
+    text-decoration: underline #FFCC00 5px;
+    padding: 1rem;
 }
 
 .fases-container {
@@ -132,11 +136,14 @@ body {
 }
 
 .imagem-fase {
-    width: 100%;
+    width: 119%; /*deixar mais proximo do figma*/
     height: auto;
-    border-radius: 8px 8px 0 0; /* Arredonda apenas os cantos superiores */
     margin-bottom: 1rem;
     display: block;
+    margin-left: -2%;
+    position: relative;
+    left: -10%;
+    margin-top: -5%;
 }
 
 /* Faixa vermelha na parte inferior */
@@ -146,8 +153,8 @@ body {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 20px; /* Altura da faixa vermelha */
-    background-color: red; /* Vermelho sólido */
+    height: 30%; /* Altura da faixa vermelha para preencher tudo */
+    background-color: #921233;
     z-index: 2;
 }
 
@@ -156,34 +163,43 @@ body {
     margin-bottom: 0.5rem;
     position: relative;
     z-index: 3; /* Garante que o texto fique acima da faixa vermelha */
+    color: white; /*dar contraste*/
 }
 
 .btn-ver-mais {
-    background-color: #007bff;
+    background-color: #921233; /*cor padrão*/
     color: #fff;
     padding: 0.5rem 1rem;
     border-radius: 4px;
     text-decoration: none;
     display: inline-block;
     position: relative;
-    z-index: 3; /* Garante que o botão fique acima da faixa vermelha */
+    z-index: 3; /* Garante que o botão fique acima da faixa vermelha */ /*a faixa é td agr*/
+    border: white solid 2px;
 }
 
 .chamada-final {
     margin-top: 2rem;
-}
+    background-color: #E8E8E8;
+    text-align: center;
+    padding: 2rem;
+    /*ajustei para aparentar mais o figma*/
+    }
 
 .chamada-final p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 .btn-matricule-se {
-    background-color: #28a745;
+    font-size: larger;
+    background-color: #4781FF;/*ajustei a cor*/
     color: #fff;
-    padding: 0.75rem 1.5rem;
-    border-radius: 4px;
+    padding: 1.5rem 1.8rem;
+    border-radius: 50px;
     text-decoration: none;
     display: inline-block;
 }
+
     /*TALES DAQUI PRA CIMA*/
