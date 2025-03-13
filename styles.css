@@ -2,6 +2,7 @@
     --vermelho: #921233;
     --azul-claro: #4781FF;
     --branco: #FFFFFF;
+    --amarelo:#FFCC00;
     --font-principal: "Montserrat";
 }
 
@@ -14,7 +15,7 @@ body {
     flex-direction: column;
 }
 
-.top-cabecalho{
+.topo-cabecalho{
     background-color: var(--vermelho);
     color:var(--branco);
     display: flex;
@@ -22,6 +23,8 @@ body {
     align-items: center;
     padding: 0.5em;
     font-size: 12px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2),
+    4px 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .contatos {
@@ -36,4 +39,63 @@ body {
     align-items: center; 
     gap: 1em; 
     margin-right: 6em;
+}
+.navbar{
+        display: flex; 
+        align-items: center; 
+        justify-content: space-between; 
+        padding: 10px 20px;
+}
+.nav-cabecalho{
+    display: flex;
+    background-color: var(--azul-claro);
+    text-align: justify;
+}
+
+.nav-links {
+
+    list-style: none;
+    display: flex; 
+    gap: 70px; 
+    font-size: 19px;
+    
+    
+
+}
+
+.nav-links li {
+    position: relative;
+}
+
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--branco);
+    padding: 10px 15px;
+    display: block;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+.nav-links a:hover,
+.nav-links a:focus,
+.nav-links a.active {
+    color: var(--amarelo);
+    border-bottom: 1px solid var(--amarelo);
+}
+
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--azul-claro);
+    color: var(--branco);
+    display: none;
+    min-width: 150px;
+    list-style: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
 }

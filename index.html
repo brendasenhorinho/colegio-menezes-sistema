@@ -13,7 +13,7 @@
 </head>
 <body>
     <header class="cabecalho">
-        <div class="top-cabecalho">
+        <div class="topo-cabecalho">
             <div class="contatos">
                 <img src="img/telephone.svg" alt="icone telefone de contato">
                 <span class="contato-info">3442-4767</span>
@@ -33,7 +33,80 @@
             </div>
 
         </div>
+        <div class="nav-cabecalho">
+                <nav class="navbar">
+                    <ul class="nav-links">
+                        <div class="logo">
+                            <img src="img/logoColegioMenezes.svg" alt="Logo Colegiomenezes1">
+                        </div>
+                        
+                        <li><a href="index.html" class="active">Início</a></li>
+                        <li><a href="/html/quemsomos.html">Quem Somos</a></li>
+                        <li class="dropdown">
+                            <a href="/html/educacaoinfantil.html">Educação Infantil </a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#">Ensino Fundamental
+                                <img src="img/seta.svg" alt="icone seta">
+                            </a>
+
+                
+                            <ul class="dropdown-menu">
+                                <li><a href="/html/fundamental1.html">Ensino Fundamental I</a></li>
+                                <li><a href="/html/fundamental2.html">Ensino Fundamental II</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/html/ensinomedio.html">Ensino Médio</a></li>
+                        <li><a href="/html/eventos.html">Eventos</a></li>
+                        <li><a href="/html/estrutura.html">Estrutura</a></li>
+                        <li><a href="#">Matricule-se</a></li>
+                        
+                    </ul>
+                </nav>
+                
+         
+        </div>
     </header>
+    <section class="carrossel">
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+              <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="img/bannermatriculas.svg" alt="Livro sobre apache kafka e spring boot da alura books"></div>
+            <div class="swiper-slide"><img src="img/Liderança.svg" alt="Livro sobre liderança em design da alura books"></div>
+            <div class="swiper-slide"><img src="img/Javascript.svg" alt="Livro sobre javascript assertivo"></div>
+            <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="Livro Guia front end"></div>
+            <div class="swiper-slide"><img src="img/Portugol.svg" alt="Livro sobre portugol"></div>
+            <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="Livro sobre Acessibilidade"></div>
+            ...
+            </div>
+           
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+           
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+                const swiper = new Swiper('.swiper', {
+        
+        spaceBetween: 10,
+        slidesPerView: 3,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets'
+        },
+        });
+    </script>
+ <!-- COMECEM A PARTIR DAQUI-->
+    <section>
+        <h1>MEXAM AQUI</h1>
+    </section>
     
 </body>
 </html>
