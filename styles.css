@@ -1,0 +1,39 @@
+:root {
+    --vermelho: #921233;
+    --azul-claro: #4781FF;
+    --branco: #FFFFFF;
+    --font-principal: "Montserrat";
+}
+
+body {
+    font-family: var(--font-principal);
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: column;
+}
+
+.top-cabecalho{
+    background-color: var(--vermelho);
+    color:var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em;
+    font-size: 12px;
+}
+
+.contatos {
+    display: flex; 
+    align-items: center; 
+    gap: 0.8em; 
+    margin-left: 6em;
+}
+
+.social-icones {
+    display: flex; 
+    align-items: center; 
+    gap: 1em; 
+    margin-right: 6em;
+}
