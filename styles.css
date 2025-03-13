@@ -99,3 +99,72 @@ body {
 .dropdown:hover .dropdown-menu {
     display: block;
 }
+
+/*TALES DAQUI PRA BAIXO */
+
+.fases-educacionais {
+    padding: 2rem;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.fases-educacionais h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.fases-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.fase {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 22%;
+    text-align: center;
+}
+
+.imagem-fase {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.fase h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.btn-ver-mais {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.chamada-final {
+    margin-top: 2rem;
+}
+
+.chamada-final p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.btn-matricule-se {
+    background-color: #28a745;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+}
+    /*TALES DAQUI PRA CIMA*/
