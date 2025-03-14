@@ -68,44 +68,53 @@
         </div>
     </header>
     <section class="carrossel">
-        <div class="swiper">
-            <!-- Additional required wrapper -->
-              <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-        
-            <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide"><img src="img/bannermatriculas.svg" alt="Livro sobre apache kafka e spring boot da alura books"></div>
-            <div class="swiper-slide"><img src="img/Liderança.svg" alt="Livro sobre liderança em design da alura books"></div>
-            <div class="swiper-slide"><img src="img/Javascript.svg" alt="Livro sobre javascript assertivo"></div>
-            <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="Livro Guia front end"></div>
-            <div class="swiper-slide"><img src="img/Portugol.svg" alt="Livro sobre portugol"></div>
-            <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="Livro sobre Acessibilidade"></div>
-            ...
+        <div class="slider">
+
+            <div class="slides">
+                <!-- Radio Buttons para o carrossel-->
+                <input type="radio" name="radio-btn" id="radio1" checked>
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                     <!-- Fim dos Radio Buttons-->
+
+                    <!--Slide Images-->
+                <div class="slide-inicio">
+                    <img src="img/bannermatriculas.svg" class="slide-imagem" alt="Imagem com anuncio de matriculas">
+                </div>
+                <div class="slide">
+                    <img src="img/FeraEnem.jpg"  class="slide-imagem"  alt="qualquer coisa">
+                </div>
+                <div class="slide">
+                    <img src="img/bannermatriculas.svg" class="slide-imagem" alt="Imagem com anuncio de matriculas">
+                </div>
+                <div class="slide">
+                    <img src="img/FeraEnem.jpg" class="slide-imagem" alt="Imagem com anuncio de matriculas">
+                </div>
+                <!--Fim Slide Images-->
+                
+                <!-- Navigation auto-->
+                 <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                 </div>
+
+                 <div class="manual-navigation">
+                    <label for="radio1" class="manual-btn"></label>   
+                    <label for="radio2" class="manual-btn"></label>   
+                    <label for="radio3" class="manual-btn"></label>   
+                    <label for="radio4" class="manual-btn"></label>   
+                 </div>
             </div>
-           
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        
-           
+            
+             
+
         </div>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-                const swiper = new Swiper('.swiper', {
-        
-        spaceBetween: 10,
-        slidesPerView: 3,
-        pagination: {
-            el: '.swiper-pagination',
-            type: 'bullets'
-        },
-        });
-    </script>
  <!-- COMECEM A PARTIR DAQUI-->
     <section>
-        <h1>MEXAM AQUI</h1>
 
         <section class="fases-educacionais">
             <h2>Para Cada Fase do Seu Filho</h2>
@@ -205,6 +214,6 @@
 
 
 
-        
+        <script src="script.js"></script>
 </body>
 </html>

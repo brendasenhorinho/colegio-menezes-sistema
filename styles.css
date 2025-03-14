@@ -10,7 +10,7 @@
 body {
     font-family: var(--font-principal);
 }
-
+/*Cabeçalho*/
 .cabecalho{
     display: flex;
     flex-direction: column;
@@ -100,6 +100,112 @@ body {
 .dropdown:hover .dropdown-menu {
     display: block;
 }
+/* Fim do Cabeçalho*/
+
+/*Começo do Banner*/
+.carrossel {
+    width: 100vw; /* Ocupa toda a largura da tela */
+    overflow: hidden; /* Evita rolagem horizontal */
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+    position: inherit;
+    
+}
+.slides{
+    display: flex;
+    width: 100%;
+}
+.slide, .slide-inicio {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 25%;
+    position: relative;
+}
+.slide-imagem {
+    width: 100vw; /* Ocupa toda a largura da tela */
+    height: auto; /* Mantém a proporção */
+    object-fit: cover; /* Ajusta a imagem para cobrir */
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: 500px;
+    display: flex;
+    gap: 10px;
+    margin-left: 550px;
+    justify-content: center;
+}
+.manual-btn{
+    border: 2px solid var(--branco);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.manual-btn:hover{
+    background-color: var(--branco);
+}
+.slide-inicio{
+    display: flex;
+    width: 200%;
+}
+.slide-imagem{
+    width: 100%;
+
+}
+#radio1:checked ~ .slide-inicio{
+    margin-left: 0;
+}
+#radio2:checked ~ .slide-inicio{
+    margin-left:-100%;
+}
+#radio3:checked ~ .slide-inicio{
+    margin:-100%;
+}
+#radio4:checked ~ .slide-inicio{
+    margin-left:-100%;
+}
+.navigation-auto div{
+    border: 2px solid var(--azul-claro);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.navigation-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 500px;
+    margin-left: 550px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: var(--branco);
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: var(--branco);
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: var(--branco);
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: var(--branco);
+}
+
+
+
 
 /*TALES DAQUI PRA BAIXO */
 
