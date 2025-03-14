@@ -203,3 +203,86 @@ body {
 }
 
     /*TALES DAQUI PRA CIMA*/
+
+    /*Tales 14/03*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+#diferenciais {
+    padding: 40px 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+/* Título com linha amarela */
+.titulo-container {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.titulo-container h1 {
+    font-size: 2.5em;
+    color: #023E73;    
+    margin-bottom: 10px;
+}
+
+.linha-amarela {
+    width: 350px;
+    height: 5px;
+    background-color: #FFD700; /* Amarelo */
+    margin-left: 0;
+}
+
+#diferenciais p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+/* Grid dos diferenciais */
+.grid-diferenciais {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+    gap: 20px; /* Espaço entre os diferenciais */
+}
+
+.diferencial {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.diferencial img {
+    width: 80px; 
+    height: auto;
+    margin-right: 15px;
+    border-radius: 8px;
+}
+
+.diferencial .texto {
+    flex: 1;
+}
+
+.diferencial h2 {
+    font-size: 1.5em; 
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.diferencial p {
+    font-size: 1em; 
+    color: #666;
+    line-height: 1.6;
+}
+/*Tales daqui pra cima */
