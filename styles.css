@@ -392,3 +392,61 @@ body {
     line-height: 1.6;
 }
 /*Tales daqui pra cima */
+
+/*formando talentos*/
+
+.formando-talentos { 
+    background: linear-gradient(90deg, #b22222, #fa3535);
+    color: white;
+    text-align: center;
+    padding: 20px 0; 
+    border-radius: 10px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    justify-content: flex-start;
+    height: 400px;
+    position: relative;
+}
+
+.formando-talentos h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.talentos-container {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    height: auto;
+    text-align: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.talentos-box {
+    background: white;
+    color: #8b0000;
+    padding: 20px;
+    border-radius: 10px;
+    width: 180px;
+    text-align: center;
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.numero {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.talentos-box p {
+    margin: 0;
+}
