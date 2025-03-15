@@ -13,3 +13,13 @@ function nextImage() {
     }
     document.getElementById("radio" + count).checked = true;
 }
+
+/*formando talentos EM TESTES*/
+
+window.EfeitoScroll = ScrollReveal({reset:true})
+EfeitoScroll.script('.efeito-box',{
+    duration: 2000,
+    distance: '90px'
+})
+
+/*formando talentos EM TESTES*/
