@@ -112,16 +112,18 @@ body {
     width: 100%;
     overflow: hidden;
     position: inherit;
-    
+
 }
 .slides{
     display: flex;
     width: 100%;
+   
 }
-.slide, .slide-inicio {
+ .slide-inicio {
     min-width: 100%;
     display: flex;
     justify-content: center;
+    transition: margin-left 1s ease;
 }
 .slides input{
     display: none;
@@ -129,11 +131,17 @@ body {
 .slide{
     width: 25%;
     position: relative;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    
+   
 }
 .slide-imagem {
     width: 100vw; /* Ocupa toda a largura da tela */
     height: auto; /* Mantém a proporção */
     object-fit: cover; /* Ajusta a imagem para cobrir */
+   
 }
 
 .manual-navigation{
@@ -212,26 +220,28 @@ body {
 .fases-educacionais {
     padding: 2rem;
     text-align: center;
-    background-color: #f9f9f9;
+    background-color: var(--branco);
 }
 
 .fases-educacionais h2 {
-    color: #023E73;
+    color: var(--azul-escuro);
     font-size: 2rem;
     margin-bottom: 1.5rem;
-    text-decoration: underline #FFCC00 5px;
+    text-decoration: underline var(--amarelo) 3px;
     padding: 1rem;
+    text-transform: uppercase;
 }
 
 .fases-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 7px;
+    
 }
 
 .fase {
-    background-color: #fff;
+    background-color:var(--vermelho);
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -239,6 +249,7 @@ body {
     text-align: center;
     position: relative;
     overflow: hidden;
+
 }
 
 .imagem-fase {
@@ -266,27 +277,28 @@ body {
 
 .fase h3 {
     font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1em;
     position: relative;
     z-index: 3; /* Garante que o texto fique acima da faixa vermelha */
-    color: white; /*dar contraste*/
+    color: var(--branco); /*dar contraste*/
 }
 
 .btn-ver-mais {
-    background-color: #921233; /*cor padrão*/
-    color: #fff;
+    background-color: var(--vermelho); /*cor padrão*/
+    color: var(--branco);
     padding: 0.5rem 1rem;
     border-radius: 4px;
     text-decoration: none;
     display: inline-block;
     position: relative;
     z-index: 3; /* Garante que o botão fique acima da faixa vermelha */ /*a faixa é td agr*/
-    border: white solid 2px;
+    border: var(--branco) solid 2px;
+    border-radius: 20px;
 }
 
 .chamada-final {
     margin-top: 2rem;
-    background-color: #E8E8E8;
+    background-color: #F5F5F5;
     text-align: center;
     padding: 2rem;
     /*ajustei para aparentar mais o figma*/
@@ -300,8 +312,8 @@ body {
 
 .btn-matricule-se {
     font-size: larger;
-    background-color: #4781FF;/*ajustei a cor*/
-    color: #fff;
+    background-color: var(--azul-claro);/*ajustei a cor*/
+    color: var(--branco);
     padding: 1.5rem 1.8rem;
     border-radius: 50px;
     text-decoration: none;
@@ -315,12 +327,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color: var(--branco);
 }
 
 #diferenciais {
     padding: 40px 20px;
-    background-color: #fff;
+    background-color: var(--branco);
     border-radius: 8px;
     margin: 20px auto;
     max-width: 1200px;
@@ -334,7 +346,7 @@ body {
 
 .titulo-container h1 {
     font-size: 2.5em;
-    color: #023E73;    
+    color: var(--azul-escuro);    
     margin-bottom: 10px;
 }
 
@@ -398,7 +410,7 @@ body {
 /*formando talentos EM TESTES*/
 
 .formando-talentos { 
-    background: url('/img/FrenteColégio.jpg');
+    background: linear-gradient(to right, #D22D57 0%, #921233 100%);
     background-blend-mode: overlay;
     background-size: cover;
     background-position: center;
@@ -412,7 +424,7 @@ body {
     align-items: center;
     justify-content: center; 
     justify-content: flex-start;
-    height: 400px;
+    height: 300px;
     position: relative;
     overflow: hidden;
 }
@@ -443,7 +455,8 @@ body {
     color: #8b0000;
     padding: 20px;
     border-radius: 10px;
-    width: 180px;
+    width: 400px;
+    height: 180px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -453,13 +466,18 @@ body {
 }
 
 .numero {
-    font-size: 30px;
-    font-weight: bold;
+    font-size: 64px;
+    font-weight: 600;
     margin-top: 10px;
+    font-family: var(--font-principal);
+    margin-bottom: 10px;
 }
 
 .talentos-box p {
     margin: 0;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: var(--font-principal);
 }
 
 /*formando talentos EM TESTES*/
