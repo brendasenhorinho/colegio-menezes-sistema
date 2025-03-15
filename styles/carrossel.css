@@ -1,0 +1,65 @@
+@import url(/styles.css);
+
+.carrossel-estrutura {
+    margin-left: 1em
+   
+}
+
+.swiper-slide p {
+    width: 90%;
+    background: linear-gradient(to right, #0068D1 0%, #00356B 100%);
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    border-radius: 5px;
+    font-size: 20px;
+
+}
+
+
+.swiper-slide img {
+    width: 90%;
+    
+}
+
+/* Estilizando os botões do Swiper */
+.swiper-button-prev,
+.swiper-button-next {
+    background: linear-gradient(to right, #0068D1 0%, #00356B 100%);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+/* Ícones dentro dos botões */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+}
+
+/* Efeito hover */
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    background-color: #003F7F; /* Azul mais escuro */
+}
+
+
+.swiper-pagination {
+    position: initial;
+    margin: .5em 0;
+}
+
+.linha-amarela-estrutura{
+    width: 288px;
+    height: 5px;
+    background-color: var(--amarelo)
+}
