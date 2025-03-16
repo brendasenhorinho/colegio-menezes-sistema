@@ -5,6 +5,7 @@
    
 }
 
+
 .swiper-slide p {
     width: 90%;
     background: linear-gradient(to right, #0068D1 0%, #00356B 100%);
@@ -22,6 +23,31 @@
 .swiper-slide img {
     width: 90%;
     
+}
+
+.Slide_Eventos {
+    width: 427px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.Slide_Eventos img {
+    width: 100%;
+    height: 352px;
+    display: block;
+    border-radius: 15px 15px 0 0;
+}
+
+.Slide_Eventos p {
+    width: 100%;
+    color: var(--branco);
+    background-color: var(--vermelho);
+    font-size: 20px;
+    border-radius: 0 0 15px 15px;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: left;
 }
 
 /* Estilizando os botões do Swiper */
