@@ -1,12 +1,14 @@
 @import url(/styles.css);
 
 .carrossel-estrutura {
-    margin-left: 1em
+    margin-top: 8.8em;
+    margin-left: 1em;
+    margin-bottom: 8.8em;
    
 }
 
 
-.swiper-slide p {
+.paragrafo-estrutura {
     width: 90%;
     background: linear-gradient(to right, #0068D1 0%, #00356B 100%);
     color: var(--branco);
@@ -16,13 +18,49 @@
     padding: 20px 0;
     border-radius: 5px;
     font-size: 20px;
-
+}
+.paragrafo-eventos{
+    width: 90%;
+    background: linear-gradient(to right, #0068D1 0%, #00356B 100%);
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 20px;   
 }
 
 
-.swiper-slide img {
+.imagem-estrutura{
     width: 90%;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.titulo-botao-estrutura{
+   display: flex;
+   justify-content:space-between;
+    align-items: center;
+}
+.botao-azul{
+    color: var(--branco);
+    text-decoration: none;
+    border-radius: 30px;
+    background: linear-gradient(to right, #0068D1 0%, #00356B 100%);
+    padding: 20px 30px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-right: 50px;
+    font-family: var(--font-principal);
     
+}
+.imagem-eventos{
+    width: 97.5%;
+    display: block;
+    margin: 0;
+    padding: 0;
+
 }
 
 .Slide_Eventos {
@@ -38,17 +76,7 @@
     border-radius: 15px 15px 0 0;
 }
 
-.Slide_Eventos p {
-    width: 100%;
-    color: var(--branco);
-    background-color: var(--vermelho);
-    font-size: 20px;
-    border-radius: 0 0 15px 15px;
-    margin: 0;
-    padding: 10px;
-    box-sizing: border-box;
-    text-align: left;
-}
+
 
 /* Estilizando os botões do Swiper */
 .swiper-button-prev,

@@ -283,6 +283,8 @@ body {
 .titulo-container {
     text-align: left;
     margin-bottom: 30px;
+    margin-top: 2em;
+    margin-left: 2.5em;
 }
 
 .titulo-container h1 {
@@ -422,3 +424,28 @@ body {
 }
 
 /*formando talentos EM TESTES*/
+
+/* GOOGLE MAPS*/
+.mapBox{
+    position: relative;
+    width: 600px;
+    height: 500px;
+    background: var(--branco);
+
+}
+.mapBox iframe{
+    width: 100%;
+    height: 100%;
+}
+/* FORMULARIO*/
+
+.map-formulario{
+    display: flex;
+    justify-content: center;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
