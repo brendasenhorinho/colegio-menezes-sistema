@@ -45,7 +45,7 @@ body {
         display: flex; 
         align-items: center; 
         justify-content: space-between; 
-        padding: 10px 20px;
+        
 }
 .nav-cabecalho{
     display: flex;
@@ -264,12 +264,6 @@ body {
     /*TALES DAQUI PRA CIMA*/
 
     /*Tales 14/03*/
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: var(--branco);
-}
 
 #diferenciais {
     padding: 40px 20px;
@@ -353,44 +347,36 @@ body {
 /*formando talentos EM TESTES*/
 
 .formando-talentos { 
-    background:  url("/img/Diploma1.jpg" );
-    background-blend-mode: overlay;
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-align: center;
-    padding: 20px 0; 
-    border-radius: 10px;
-    margin: 20px;
+   background-image: url(/img/diploma.png);
+   background-size: 100%;
+   padding: 18em;
+   background-repeat: no-repeat;
+   filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.8));
+
+   
+
+}
+
+.titulo-talentos-container{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; 
-    justify-content: flex-start;
-    height: 600px;
-    position: relative;
-    overflow: hidden;
-    transition: background-position 0.3s ease-out;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 45px;
+    margin-top: -25vh;
+    font-weight: 700;
+    text-shadow: 4px 4px 8px black;
+
+
 }
 
-.formando-talentos::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.2); 
-    z-index: 1;
+.reveal {
+    margin-top: 10em;
+    display: flex;
+    justify-content: center;
+    color: var(--branco);
+    
 }
 
-.formando-talentos h2, .talentos-container {
-    position: relative;
-    z-index: 2;
-    font-size: 40px;
-    font-weight: bold;
-    margin-bottom: 20px; 
-}
 
 .talentos-container {
     display: flex;
@@ -400,11 +386,9 @@ body {
     text-align: center;
     align-items: center;
     flex-grow: 1;
+   margin-top: -7vh;
 }
 
-.efeito-box{
-    visibility: hidden;
-}
 
 .talentos-box {
     background: white;
@@ -421,7 +405,7 @@ body {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.numero {
+.contagem-numero {
     font-size: 64px;
     font-weight: 600;
     margin-top: 10px;
@@ -437,13 +421,7 @@ body {
     font-family: var(--font-principal);
 }
 
-.reveal {
-    visibility: hidden; 
-}
 
-.reveal.active {
-    visibility: visible; 
-}
 
 /*formando talentos EM TESTES*/
 
