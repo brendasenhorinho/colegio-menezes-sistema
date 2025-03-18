@@ -355,7 +355,7 @@ body {
 .formando-talentos { 
     background:  url("/img/teste11.jpg" );
     background-blend-mode: overlay;
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
     color: white;
     text-align: center;
@@ -370,26 +370,14 @@ body {
     height: 600px;
     position: relative;
     overflow: hidden;
-    transition: background-position 0.3s ease-out;
+    transition: background-position 0.3s ease-out;
 }
 
-.formando-talentos::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.2); 
-    z-index: 1;
-}
 
-.formando-talentos h2, .talentos-container {
-    position: relative;
-    z-index: 2;
+.formando-talentos h2 {
     font-size: 40px;
     font-weight: bold;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
 
 .talentos-container {
@@ -427,7 +415,6 @@ body {
     margin-top: 10px;
     font-family: var(--font-principal);
     margin-bottom: 10px;
-    transition: opacity 0.3 ease-in-out;
 }
 
 .talentos-box p {
@@ -435,14 +422,6 @@ body {
     font-size: 36px;
     font-weight: bold;
     font-family: var(--font-principal);
-}
-
-.reveal {
-    visibility: hidden; 
-}
-
-.reveal.active {
-    visibility: visible; 
 }
 
 /*formando talentos EM TESTES*/
@@ -469,5 +448,6 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    gap
 }
 
