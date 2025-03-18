@@ -49,7 +49,30 @@ ScrollReveal().reveal('.formando-talentos .reveal', {
     distance: '50px',
     duration: 1500,
     easing: 'ease-in-out',
-    interval: 200
+    interval: 200,
+    afterReveal: function (domEl) {
+        if (domEl.classList.contains('talentos-box')) {
+            const contagemAnos = document.getElementById('contagem-anos');
+            const contagemAlunos = document.getElementById('contagem-alunos');
+
+            animarContagem(contagemAnos, 10, 1000); // Contagem de 0 a 10 em 1 segundo
+            animarContagem(contagemAlunos, 100, 2000); // Contagem de 0 a 100 em 2 segundos
+        }
+    }
 });
 
+function animarContagem(elemento, valorFinal, duracao) {
+    let valorInicial = 0;
+    const incremento = Math.ceil(valorFinal / (duracao / 16)); // 16ms é o tempo aproximado de um frame
+
+    const intervalo = setInterval(() => {
+        valorInicial += incremento;
+        if (valorInicial >= valorFinal) {
+            elemento.textContent = `+${valorFinal}`;
+            clearInterval(intervalo);
+        } else {
+            elemento.textContent = `+${valorInicial}`;
+        }
+    }, 16); // Aproximadamente 60 frames por segundo
+}
 /*formando talentos EM TESTES*/

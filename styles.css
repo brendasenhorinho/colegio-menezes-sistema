@@ -353,9 +353,9 @@ body {
 /*formando talentos EM TESTES*/
 
 .formando-talentos { 
-    background:  url("/img/FrenteColégio.jpg" );
+    background:  url("/img/teste11.jpg" );
     background-blend-mode: overlay;
-    background-size: cover;
+    background-size: 100%;
     background-position: center;
     color: white;
     text-align: center;
@@ -427,6 +427,7 @@ body {
     margin-top: 10px;
     font-family: var(--font-principal);
     margin-bottom: 10px;
+    transition: opacity 0.3 ease-in-out;
 }
 
 .talentos-box p {
