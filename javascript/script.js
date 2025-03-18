@@ -41,7 +41,7 @@ document.addEventListener('scroll', function() {
     const scrollY = window.scrollY || window.pageYOffset;
     const movimento = scrollY * 0.1;
 
-    fundo.style.backgroundPosition = center ${movimento}px;
+    fundo.style.backgroundPosition = `center ${movimento}px`;
 });
 
 ScrollReveal().reveal('.formando-talentos .reveal', {
@@ -68,10 +68,11 @@ function animarContagem(elemento, valorFinal, duracao) {
     const intervalo = setInterval(() => {
         valorInicial += incremento;
         if (valorInicial >= valorFinal) {
-            elemento.textContent = +${valorFinal};
+            elemento.textContent = `+${valorFinal}`;
             clearInterval(intervalo);
         } else {
-            elemento.textContent = +${valorInicial};
+            elemento.textContent = `+${valorInicial}`;
         }
     }, 16); // Aproximadamente 60 frames por segundo
 }
+/*formando talentos EM TESTES*/
