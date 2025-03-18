@@ -353,7 +353,7 @@ body {
 /*formando talentos EM TESTES*/
 
 .formando-talentos { 
-    background: linear-gradient(to right, #D22D57 0%, #921233 100%);
+    background:  url("/img/FrenteColégio.jpg" );
     background-blend-mode: overlay;
     background-size: cover;
     background-position: center;
@@ -367,16 +367,29 @@ body {
     align-items: center;
     justify-content: center; 
     justify-content: flex-start;
-    height: 300px;
+    height: 600px;
     position: relative;
     overflow: hidden;
+    transition: background-position 0.3s ease-out;
 }
 
+.formando-talentos::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2); 
+    z-index: 1;
+}
 
-.formando-talentos h2 {
+.formando-talentos h2, .talentos-container {
+    position: relative;
+    z-index: 2;
     font-size: 40px;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 20px; 
 }
 
 .talentos-container {
@@ -421,6 +434,14 @@ body {
     font-size: 36px;
     font-weight: bold;
     font-family: var(--font-principal);
+}
+
+.reveal {
+    visibility: hidden; 
+}
+
+.reveal.active {
+    visibility: visible; 
 }
 
 /*formando talentos EM TESTES*/

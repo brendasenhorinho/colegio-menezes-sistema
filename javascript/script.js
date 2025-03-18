@@ -36,10 +36,20 @@ function moveSlide(index) {
 
 /*formando talentos EM TESTES*/
 
-window.EfeitoScroll = ScrollReveal({reset:true})
-EfeitoScroll.script('.efeito-box',{
-    duration: 2000,
-    distance: '90px'
-})
+document.addEventListener('scroll', function() {
+    const fundo = document.querySelector('.formando-talentos');
+    const scrollY = window.scrollY || window.pageYOffset;
+    const movimento = scrollY * 0.1;
+
+    fundo.style.backgroundPosition = `center ${movimento}px`;
+});
+
+ScrollReveal().reveal('.formando-talentos .reveal', {
+    delay: 400,
+    distance: '50px',
+    duration: 1500,
+    easing: 'ease-in-out',
+    interval: 200
+});
 
 /*formando talentos EM TESTES*/
