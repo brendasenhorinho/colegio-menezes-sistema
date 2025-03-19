@@ -34,7 +34,7 @@ function moveSlide(index) {
 
 
 
-/*formando talentos EM TESTES*/
+/*formando talentos*/
 
 document.addEventListener('scroll', function() {
     const fundo = document.querySelector('.formando-talentos');
@@ -75,4 +75,4 @@ function animarContagem(elemento, valorFinal, duracao) {
         }
     }, 16); // Aproximadamente 60 frames por segundo
 }
-/*formando talentos EM TESTES*/
+/*formando talentos*/

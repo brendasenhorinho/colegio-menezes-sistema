@@ -345,7 +345,7 @@ body {
 
 
 
-/*formando talentos EM TESTES*/
+/*formando talentos*/
 
 .formando-talentos { 
    background-image: url(/img/diploma.png);
@@ -422,32 +422,108 @@ body {
     font-family: var(--font-principal);
 }
 
-
-
-/*formando talentos EM TESTES*/
+/*formando talentos*/
 
 /* GOOGLE MAPS*/
 .mapBox{
     position: relative;
     width: 600px;
-    height: 500px;
+    height: 550px;
     background: var(--branco);
+    margin-bottom: 10rem;
+    border: 2px solid #d8d4d4;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 70px;
 
 }
 .mapBox iframe{
     width: 100%;
     height: 100%;
+    border: none;
 }
+
+
 /* FORMULARIO*/
 
 .map-formulario{
     display: flex;
     justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
 }
+
 .form{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    background-color: #dddada;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.titulo-formulario {
+    font-size: 3rem;
+    color: #000000;
+    margin-bottom: 2rem;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.titulo-formulario::before {
+    content: "📧";
+    display: block;
+}
+
+.label-formulario {
+    color: #000000;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.input-formulario,
+.textarea-formulario {
+    font: inherit;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    transition: border-color, box-shadow 0.2s;
+    width: 450px;
+}
+
+.textarea-formulario {
+    min-height: 6rem;
+    resize: none;
+}
+
+.input-formulario:hover,
+.input-formulario:focus,
+.textarea-formulario:hover,
+.textarea-formulario:focus {
+    outline: none;
+    border-color: #09d;
+    box-shadow: 0 0 0 3px #4dc8ff;
+}
+
+.button-formulario {
+    display: block;
+    padding: 1rem;
+    background: #0072c4;
+    color: #fff;
+    font: inherit;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.button-formulario:hover,
+.button-formulario:focus {
+    outline: none;
+    background: #09d;
 }
 
 /*FOOTER*/
