@@ -240,10 +240,13 @@ body {
 
 .chamada-final {
     margin-top: 2rem;
-    background-color: #F5F5F5;
+    
     text-align: center;
     padding: 2rem;
-    /*ajustei para aparentar mais o figma*/
+    margin-bottom: 200px;
+    background: linear-gradient(to right, #f5f5f5 0%, #FFFFFF 100%);
+    filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.8));
+
     }
 
 .chamada-final p {
@@ -260,6 +263,24 @@ body {
     border-radius: 50px;
     text-decoration: none;
     display: inline-block;
+    transform: translate(-550px, 100px);
+    margin-bottom: 100px;
+    background: linear-gradient(to right, #0068D1 0%, #00356B 100%);
+}
+
+.video-promo{
+    margin-right: 600px;
+    width: 542px;
+    height: 300;
+
+}
+.video-texto{
+    color:var(--azul-escuro);
+    margin-top: -20px;
+    gap: 100px;
+    margin-left: 900px;
+    margin-bottom: 500px;
+
 }
 
     /*TALES DAQUI PRA CIMA*/
@@ -449,7 +470,7 @@ body {
 .map-formulario{
     display: flex;
     justify-content: center;
-    gap: 3rem;
+    gap: 20em;
     flex-wrap: wrap;
 }
 
@@ -458,32 +479,36 @@ body {
     justify-content: center;
     flex-direction: column;
     background-color: #dddada;
-    padding: 2rem;
+    padding: 2em;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.8));
 }
 
 .titulo-formulario {
     font-size: 3rem;
-    color: #000000;
+    color: #072A81;
     margin-bottom: 2rem;
     text-align: center;
     line-height: 1.2;
+
 }
 
 .titulo-formulario::before {
     content: "📧";
     display: block;
+    
 }
 
 .label-formulario {
-    color: #000000;
+    color: #022778;
     line-height: 1;
     margin-bottom: 0.5rem;
 }
 
 .input-formulario,
 .textarea-formulario {
+    
     font: inherit;
     padding: 1rem;
     margin-bottom: 1rem;
@@ -524,6 +549,9 @@ body {
 .button-formulario:focus {
     outline: none;
     background: #09d;
+}
+.container-formulario{
+    
 }
 
 /*FOOTER*/
