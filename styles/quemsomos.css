@@ -1,0 +1,76 @@
+/* Definição das cores */
+:root {
+    --vermelho: #921233; /* Vermelho corrigido */
+    --amarelo: #FFCC00; /* Amarelo corrigido */
+    --azul-escuro: #2B4D99; /* Azul corrigido */
+    --branco: #FFFFFF;
+}
+
+/* Estilos para a linha amarela e título */
+.titulo-linha {
+    text-align: center;
+    margin: 3rem auto; /* Centralizado e com espaçamento */
+    max-width: 1200px; /* Limita a largura para melhor centralização */
+    padding: 0 1rem; /* Adiciona padding para evitar colar nas bordas */
+}
+
+.titulo-banner {
+    font-size: 2rem;
+    color: var(--azul-escuro);
+    margin-bottom: 1.5rem; /* Aumentei o espaçamento */
+    text-transform: uppercase;
+    text-align: center; /* Centraliza o texto */
+    font-family: 'Montserrat', sans-serif; /* Fonte Montserrat */
+}
+
+.linha-amarela {
+    width: 80%; /* Ajustei a largura para 80% */
+    height: 5px;
+    background-color: var(--amarelo);
+    margin: 0 auto; /* Centraliza a linha */
+}
+
+/* Estilos para a seção "Quem Somos" */
+.quem-somos {
+    padding: 3rem; /* Aumentei o espaçamento */
+    background-color: var(--branco);
+    max-width: 1200px; /* Limita a largura para melhor centralização */
+    margin: 0 auto; /* Centraliza a seção */
+}
+
+.quem-somos-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3rem; /* Aumentei o espaçamento */
+}
+
+.quem-somos-texto {
+    flex: 2;
+}
+
+.quem-somos-imagem {
+    flex: 1;
+    text-align: center;
+}
+
+.quem-somos-imagem img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.titulo-vermelho {
+    color: var(--vermelho); /* Vermelho corrigido */
+    font-size: 1.75rem; /* Aumentei o tamanho da fonte */
+    margin-bottom: 2.5rem; /* Aumentei o espaçamento */
+    font-family: 'Montserrat', sans-serif; /* Fonte Montserrat */
+}
+
+.assinatura {
+    font-style: italic;
+    text-align: right;
+    margin-top: 3rem; /* Aumentei o espaçamento */
+    font-size: 1.25rem; /* Aumentei o tamanho da fonte */
+    font-family: 'Montserrat', sans-serif; /* Fonte Montserrat */
+}

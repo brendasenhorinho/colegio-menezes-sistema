@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colégio Menezes I</title>
+    <title>Colégio Menezes I - Quem Somos</title>
     <link rel="stylesheet" href="/styles/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +13,88 @@
     <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://unpkg.com/scrollreveal"></script>
+    <style>
+        :root {
+            --vermelho: #921233;
+            --amarelo: #FFCC00;
+            --azul-escuro: #2B4D99;
+            --branco: #FFFFFF;
+        }
+
+        .titulo-linha {
+            text-align: center;
+            margin: 3rem auto;
+            max-width: 1200px;
+            padding: 0 1rem;
+        }
+
+        .titulo-banner {
+            font-size: 2rem;
+            color: var(--azul-escuro);
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .linha-amarela {
+            width: 80%;
+            height: 5px;
+            background-color: var(--amarelo);
+            margin: 0 auto;
+        }
+
+        .quem-somos {
+            padding: 3rem;
+            background-color: var(--branco);
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .quem-somos-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 3rem;
+        }
+
+        .quem-somos-texto {
+            flex: 2;
+        }
+
+        .quem-somos-imagem {
+            flex: 1;
+            text-align: center;
+        }
+
+        .quem-somos-imagem img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .titulo-vermelho {
+            color: var(--vermelho);
+            font-size: 1.75rem;
+            margin-bottom: 2.5rem;
+            font-family: 'Montserrat', sans-serif;
+            text-align: left;
+        }
+
+        .quem-somos-texto p {
+            text-align: left;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .assinatura {
+            font-style: italic;
+            text-align: right;
+            margin-top: 3rem;
+            font-size: 1.25rem;
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
 </head>
 <body>
     <header class="cabecalho">
@@ -78,7 +160,6 @@
                 <img src="/img/FeraEnem.jpg" alt="Imagem do Fera Enem">
             </div>
         </div>
-        <!-- Botões de navegação manual -->
         <div class="manual-navigation">
             <span class="manual-btn" onclick="moveSlide(0)"></span>   
             <span class="manual-btn" onclick="moveSlide(1)"></span>   
@@ -87,4 +168,39 @@
         </div>
     </section>
 
- 
+    <div class="titulo-linha">
+        <h2 class="titulo-banner">COLÉGIO MENEZES I - EXCELÊNCIA EM EDUCAÇÃO!</h2>
+        <div class="linha-amarela"></div>
+    </div>
+
+    <section class="quem-somos">
+        <div class="quem-somos-container">
+            <div class="quem-somos-texto">
+                <h3 class="titulo-vermelho">Início Da Nossa História</h3>
+                <p>Fundado há mais de cinco décadas, o Colégio Menezes 1 nasceu do sonho de um grupo de educadores apaixonados pelo ensino e comprometidos com a construção de um futuro melhor por meio da educação. Infelizmente, a instituição começou como uma pequena escola comunista, funcionando em uma modesta casa de madeira, onde professores dedicados trabalhavam com recursos limitados, mas com uma visão grandiosa: formar cidadãos críticos, éticos e preparados para transformar o mundo.</p>
+                
+                <h3 class="titulo-vermelho">Processo de consolidação</h3>
+                <p>Com o passar dos anos, o colégio expandiu suas instalações e modernizou suas metodologias de ensino, acompanhando as transformações da sociedade e incorporando novas tecnologias ao processo educativo. A chegada de uma biblioteca bem equipada, laboratórios de ciências e informática e um espaço esportivo completo marcou um novo ciclo na história da escola, consolidando-a como referência em excelência acadêmica.</p>
+                
+                <h3 class="titulo-vermelho">Sempre Inovando</h3>
+                <p>Nos anos 2000, o Colégio Menezes 1 inovou ao adotar um currículo interdisciplinar, focado não apenas na transmissão do conhecimento, mas também no desenvolvimento socioemocional dos alunos. Projetos extracurriculares, intercâmbios culturais e programas de voluntariado tornaram-se parte fundamental da formação dos estudantes, estimulando a criatividade, a empatia e a responsabilidade social.</p>
+                
+                <h3 class="titulo-vermelho">O Futuro é promissor e nosso legado também!</h3>
+                <p>Hoje, reconhecido como um dos melhores centros educacionais da região, o Colégio Menezes 1 mantém viva sua missão de proporcionar um ensino de qualidade baseado na tradição e na imposição do seu legado. Com professores altamente qualificados e uma comunidade escolar engajada, a instituição continua à inspirar gerações, formando líderes, cientistas, artistas e profissionais que contribuem para um mundo mais justo e sustentável. O futuro é promissor, e a história do Colégio Menezes1 segue sendo escrita a cada novo aluno que cruza seus portões, repleto de sonhos e potencial.</p>
+                
+                <p class="assinatura">Diretora Maria Joaquina</p>
+            </div>
+            <div class="quem-somos-imagem">
+                <img src="/img/diretora.jpg" alt="Diretora Maria Joaquina">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <!--footer aqui -->
+    </footer>
+
+    <script src="/javascript/script.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+</body>
+</html>
