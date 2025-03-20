@@ -127,8 +127,13 @@
             <!--VIDEO COLEGIO MENEZES-->
         <section class="chamada-final">
             <div>
-                <p class="video-texto">Venha se formar no Colégio Menezes I. Aqui é mais que uma escola, uma grande família!</p>
-                <video class="video-promo" src="videos/VideoColegiomenezes1.mp4" controls></video>
+                <video id="meuVideo" class="video-promo" autoplay loop muted playsinline>
+                    <source src="videos/VideoColegiomenezes1.mp4" type="video/mp4">
+                    Seu navegador não suporta vídeos.
+                  </video>
+            </div>
+            <div class="video-texto-ancora">
+                <p class="video-texto">Venha se formar no <span style="color: #4781FF;">Colégio Menezes I</span>. Aqui é mais que uma escola, uma grande família!</p>
                 <a href="#" class="btn-matricule-se">Matricule-se aqui</a><!--coloquei em uma section separada-->
             </div>
         </section>
@@ -323,11 +328,11 @@
                 <h1 class="titulo-formulario">Entre Em Contato</h1>
                 <form action="https://formsubmit.co/lucas-52111@live.com" method="POST" class="form">
 
-                    <label for="name" class="label-formulario">Nome</label>
+                    <label for="name" class="label-formulario">Nome:</label>
                     <input type="text" name="name" class="input-formulario" required>
-                    <label for="email" class="label-formulario"><storng>Email</storng></label>
+                    <label for="email" class="label-formulario"><storng>Email:</storng></label>
                     <input type="email" name="email" class="input-formulario" required>
-                    <label for="message" class="label-formulario">Mensagem</label>
+                    <label for="message" class="label-formulario">Mensagem:</label>
                     <input type="hidden" name="_captcha" value="false"> <!-- captcha -->
                     <textarea  name="message" class="textarea-formulario" placeholder="Escreva Aqui" required></textarea>
                     <input type="hidden" name="_next" value="http://127.0.0.1:5500/html/obrigado.html">
@@ -399,6 +404,21 @@
     },
             
         });
+
     </script>
+    <script>
+        const video = document.getElementById("meuVideo");
+      
+        // Impede que o usuário pause o vídeo
+        video.addEventListener("pause", () => {
+          video.play();
+        });
+      
+        // Impede a pausa ao clicar no vídeo
+        video.addEventListener("click", (event) => {
+          event.preventDefault();
+          video.play();
+        });
+      </script>
 </body>
 </html>
