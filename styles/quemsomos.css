@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 /* Definição das cores */
 :root {
     --vermelho: #921233; /* Vermelho corrigido */
@@ -5,6 +6,8 @@
     --azul-escuro: #2B4D99; /* Azul corrigido */
     --branco: #FFFFFF;
 }
+
+
 
 /* Estilos para a linha amarela e título */
 .titulo-linha {
@@ -32,45 +35,66 @@
 
 /* Estilos para a seção "Quem Somos" */
 .quem-somos {
-    padding: 3rem; /* Aumentei o espaçamento */
+    padding: 2em; /* Aumentei o espaçamento */
     background-color: var(--branco);
     max-width: 1200px; /* Limita a largura para melhor centralização */
-    margin: 0 auto; /* Centraliza a seção */
+     margin-left: 150px;
 }
-
 .quem-somos-container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     gap: 3rem; /* Aumentei o espaçamento */
+    
+
 }
 
 .quem-somos-texto {
-    flex: 2;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 500px;
+    
 }
 
+
 .quem-somos-imagem {
-    flex: 1;
-    text-align: center;
+    
+    filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.8));
+    
 }
 
 .quem-somos-imagem img {
-    max-width: 100%;
-    height: auto;
+    margin-top: -1800px;
+    width: 500px;
+    height: 536;
     border-radius: 8px;
+    margin-left: 1400px;
+    margin-bottom: -600px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .titulo-vermelho {
     color: var(--vermelho); /* Vermelho corrigido */
-    font-size: 1.75rem; /* Aumentei o tamanho da fonte */
+    font-size: 30px; /* Aumentei o tamanho da fonte */
+    font-weight: 600;
     margin-bottom: 2.5rem; /* Aumentei o espaçamento */
     font-family: 'Montserrat', sans-serif; /* Fonte Montserrat */
+    padding-top: 20px;
 }
 
 .assinatura {
+    display: flex;
+    justify-content: center;
     font-style: italic;
     text-align: right;
-    margin-top: 3rem; /* Aumentei o espaçamento */
-    font-size: 1.25rem; /* Aumentei o tamanho da fonte */
-    font-family: 'Montserrat', sans-serif; /* Fonte Montserrat */
+    margin-top: 620px;
+    margin-right: -1360px;
+    font-size: 24px; /* Aumentei o tamanho da fonte */
+    font-weight: 600;
+}
+.quem-somos-foto{
+    display: flex;
+    justify-content: left;
+   margin-bottom: 1400px;
+   margin-top: -1200px;
 }

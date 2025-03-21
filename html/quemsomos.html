@@ -8,94 +8,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="/styles/carrossel.css">
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../styles/carrossel.css">
+    <link rel="stylesheet" href="../styles/quemsomos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://unpkg.com/scrollreveal"></script>
-    <style>
-        :root {
-            --vermelho: #921233;
-            --amarelo: #FFCC00;
-            --azul-escuro: #2B4D99;
-            --branco: #FFFFFF;
-        }
-
-        .titulo-linha {
-            text-align: center;
-            margin: 3rem auto;
-            max-width: 1200px;
-            padding: 0 1rem;
-        }
-
-        .titulo-banner {
-            font-size: 2rem;
-            color: var(--azul-escuro);
-            margin-bottom: 1.5rem;
-            text-transform: uppercase;
-            text-align: center;
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        .linha-amarela {
-            width: 80%;
-            height: 5px;
-            background-color: var(--amarelo);
-            margin: 0 auto;
-        }
-
-        .quem-somos {
-            padding: 3rem;
-            background-color: var(--branco);
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .quem-somos-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            gap: 3rem;
-        }
-
-        .quem-somos-texto {
-            flex: 2;
-        }
-
-        .quem-somos-imagem {
-            flex: 1;
-            text-align: center;
-        }
-
-        .quem-somos-imagem img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
-
-        .titulo-vermelho {
-            color: var(--vermelho);
-            font-size: 1.75rem;
-            margin-bottom: 2.5rem;
-            font-family: 'Montserrat', sans-serif;
-            text-align: left;
-        }
-
-        .quem-somos-texto p {
-            text-align: left;
-            margin-bottom: 1.5rem;
-            line-height: 1.6;
-        }
-
-        .assinatura {
-            font-style: italic;
-            text-align: right;
-            margin-top: 3rem;
-            font-size: 1.25rem;
-            font-family: 'Montserrat', sans-serif;
-        }
-    </style>
 </head>
+
 <body>
     <header class="cabecalho">
         <div class="topo-cabecalho">
@@ -123,8 +42,8 @@
                     <div class="logo">
                         <img src="/img/logoColegioMenezes.svg" alt="Logo Colegiomenezes1">
                     </div>
-                    <li><a href="index.html" class="active">Início</a></li>
-                    <li><a href="/html/quemsomos.html">Quem Somos</a></li>
+                    <li><a href="/index.html" >Início</a></li>
+                    <li><a href="/html/quemsomos.html" class="active">Quem Somos</a></li>
                     <li class="dropdown">
                         <a href="/html/educacaoinfantil.html">Educação Infantil</a>
                     </li>
@@ -172,32 +91,72 @@
         <h2 class="titulo-banner">COLÉGIO MENEZES I - EXCELÊNCIA EM EDUCAÇÃO!</h2>
         <div class="linha-amarela"></div>
     </div>
-
+<!-- estrutura quem somos-->
     <section class="quem-somos">
         <div class="quem-somos-container">
             <div class="quem-somos-texto">
                 <h3 class="titulo-vermelho">Início Da Nossa História</h3>
-                <p>Fundado há mais de cinco décadas, o Colégio Menezes 1 nasceu do sonho de um grupo de educadores apaixonados pelo ensino e comprometidos com a construção de um futuro melhor por meio da educação. Infelizmente, a instituição começou como uma pequena escola comunista, funcionando em uma modesta casa de madeira, onde professores dedicados trabalhavam com recursos limitados, mas com uma visão grandiosa: formar cidadãos críticos, éticos e preparados para transformar o mundo.</p>
+                <p class="paragrafo-quemsomos">Fundado há mais de 30 anos, o Colégio Menezes I nasceu do sonho de um grupo de educadores apaixonados pelo ensino e comprometidos com a construção de um futuro melhor por meio da educação. 
+                    O Colégio Menezes I começou como uma pequena escola comunitária, com estrutura modesta, mas sempre mantendo um compromisso sólido com a qualidade do ensino. Com o tempo, a instituição cresceu e se tornou um nome respeitado na educação local. Atualmente, é dirigido por Maria Aline, filha da fundadora, e se destaca não apenas pela sua tradição, mas também por iniciativas como a criação de sua quadrilha infantil em 2001, que ajudou a reforçar sua presença na comunidade.</p>
                 
                 <h3 class="titulo-vermelho">Processo de consolidação</h3>
-                <p>Com o passar dos anos, o colégio expandiu suas instalações e modernizou suas metodologias de ensino, acompanhando as transformações da sociedade e incorporando novas tecnologias ao processo educativo. A chegada de uma biblioteca bem equipada, laboratórios de ciências e informática e um espaço esportivo completo marcou um novo ciclo na história da escola, consolidando-a como referência em excelência acadêmica.</p>
+                <p class="paragrafo-quemsomos">Com o passar dos anos, o colégio expandiu suas instalações e modernizou suas metodologias de ensino, acompanhando as transformações da sociedade e incorporando novas tecnologias ao processo educativo. A chegada de uma biblioteca bem equipada, laboratórios de ciências e informática e um espaço esportivo completo marcou um novo ciclo na história da escola, consolidando-a como referência em excelência acadêmica.</p>
                 
                 <h3 class="titulo-vermelho">Sempre Inovando</h3>
-                <p>Nos anos 2000, o Colégio Menezes 1 inovou ao adotar um currículo interdisciplinar, focado não apenas na transmissão do conhecimento, mas também no desenvolvimento socioemocional dos alunos. Projetos extracurriculares, intercâmbios culturais e programas de voluntariado tornaram-se parte fundamental da formação dos estudantes, estimulando a criatividade, a empatia e a responsabilidade social.</p>
+                <p class="paragrafo-quemsomos">Nos anos 2000, o Colégio Menezes 1 inovou ao adotar um currículo interdisciplinar, focado não apenas na transmissão do conhecimento, mas também no desenvolvimento socioemocional dos alunos. Projetos extracurriculares, intercâmbios culturais e programas de voluntariado tornaram-se parte fundamental da formação dos estudantes, estimulando a criatividade, a empatia e a responsabilidade social.</p>
                 
                 <h3 class="titulo-vermelho">O Futuro é promissor e nosso legado também!</h3>
                 <p>Hoje, reconhecido como um dos melhores centros educacionais da região, o Colégio Menezes 1 mantém viva sua missão de proporcionar um ensino de qualidade baseado na tradição e na imposição do seu legado. Com professores altamente qualificados e uma comunidade escolar engajada, a instituição continua à inspirar gerações, formando líderes, cientistas, artistas e profissionais que contribuem para um mundo mais justo e sustentável. O futuro é promissor, e a história do Colégio Menezes1 segue sendo escrita a cada novo aluno que cruza seus portões, repleto de sonhos e potencial.</p>
-                
-                <p class="assinatura">Diretora Maria Joaquina</p>
-            </div>
-            <div class="quem-somos-imagem">
-                <img src="/img/diretora.jpg" alt="Diretora Maria Joaquina">
             </div>
         </div>
+        <!--outra section-->
+        <section class="quem-somos-foto"> 
+            <div class="quem-somos-imagem">
+                <img src="/img/diretora.jpg" alt="Diretora Maria Joaquina">
+                <p class="assinatura">Diretora Maria Aline</p>
+            </div>
+
+        </section>
+        
+    <!-- fim -->
     </section>
 
     <footer>
-        <!--footer aqui -->
+        <section class="footer1">
+            <div id="footer_content">
+                <div id="footer_contacts">
+                    <div class="collun-footer">
+                        <div class="LogoFooter"> <img src="/img/logoColegioMenezes.svg" alt="Logo do Colegio menezes1"></div>
+                    </div>
+                    <div class="collun-footer">
+                        <h3>Sobre nós</h3>
+                        <p>Somos o Colégio Menezes, dedicados à educação de qualidade que molda futuros promissores.</p>
+                    </div>
+                    <div class="collun-footer">
+                        <h3>Sede</h3>
+                        <p>R. Carnaíba, 64 - Nova Descoberta, Recife - PE, 52090-121</p>
+                    </div>
+                    <div class="collun-footer">
+                        <h3>Entre em contato</h3>
+                        <div id="footer_social_media">
+                            <a href="#" class="footer-link" id="facebook">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                            <a href="#" class="footer-link" id="instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#" class="footer-link" id="whatsapp">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Faixa azul -->
+            <div id="footer_blue_stripe">
+                <p>&#169; Todos os direitos reservados</p>
+            </div>
+        </section>
     </footer>
 
     <script src="/javascript/script.js"></script>
