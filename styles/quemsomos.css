@@ -20,7 +20,7 @@
 .titulo-banner {
     font-size: 2rem;
     color: var(--azul-escuro);
-    margin-bottom: 1.5rem; /* Aumentei o espaçamento */
+    margin-bottom: 1rem; /* Aumentei o espaçamento */
     text-transform: uppercase;
     text-align: center; /* Centraliza o texto */
     font-family: 'Montserrat', sans-serif; /* Fonte Montserrat */
@@ -38,37 +38,32 @@
     padding: 2em; /* Aumentei o espaçamento */
     background-color: var(--branco);
     max-width: 1200px; /* Limita a largura para melhor centralização */
-     margin-left: 150px;
+    margin-left: 100px;
 }
 .quem-somos-container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     gap: 3rem; 
-   
-
 }
 
 .quem-somos-texto {
+    flex: 2;
     font-weight: 500;
     font-size: 20px;
-    margin-bottom: 500px;
-    
+    margin-bottom: 1rem;
 }
 
-
 .quem-somos-imagem {
-    
+    flex: 1;
     filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.8));
-    
 }
 
 .quem-somos-imagem img {
-    margin-top: -1800px;
-    width: 500px;
-    height: 536;
+    width: 450px;
     border-radius: 8px;
-    margin-left: 1400px;
+    margin-top: 30rem;
+    margin-left: 1300px;
     margin-bottom: -600px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
@@ -77,9 +72,9 @@
     color: var(--vermelho); /* Vermelho corrigido */
     font-size: 30px; /* Aumentei o tamanho da fonte */
     font-weight: 600;
-    margin-bottom: 2.5rem; /* Aumentei o espaçamento */
+    margin-bottom: 1rem; /* Aumentei o espaçamento */
     font-family: 'Montserrat', sans-serif; /* Fonte Montserrat */
-    padding-top: 20px;
+    padding-top: 80px;
 }
 
 .assinatura {
