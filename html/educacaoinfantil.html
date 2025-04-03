@@ -64,19 +64,89 @@
         </div>
     </header>
     
-    <!--parte do texto-->
-    <main>
-        <div class="titulo-linhaEI">
-            <h2 class="titulo-bannerEI">Educação Infantil</h2>
-            <div class="linha-amarelaEI"></div>
+    
+        <div class="titulo-linha">
+            <h2 class="titulo-banner">EDUCAÇÃO INFANTIL</h2>
+            <div class="linha-amarela"></div>
         </div>
-        
-        <section class="Importancia">
-            <h3 class="titulo-azul">A Importância da Educação Infantil</h3>
-            <p class="TextoExplicativo">
-                A educação infantil desempenha um papel fundamental no desenvolvimento global da criança, estimulando aspectos cognitivos, emocionais e sociais. Durante essa fase, os pequenos descobrem o mundo ao seu redor por meio de atividades lúdicas, despertando curiosidade e criatividade. O ambiente escolar seguro e acolhedor favorece a interação social, fortalecendo a empatia e a cooperação. O cérebro infantil está em constante desenvolvimento, formando conexões neurais essenciais para a aprendizagem futura. Estudos mostram que crianças que recebem uma educação de qualidade nessa etapa têm mais facilidade para aprender e desenvolvem inteligência emocional. A metodologia deve priorizar o brincar e a exploração, contribuindo para o desenvolvimento da linguagem, do raciocínio lógico e da coordenação motora. Os professores atuam como mediadores, incentivando a autonomia e o pensamento crítico. Investir na educação infantil significa proporcionar uma base sólida para um futuro de sucesso, felicidade e inclusão social.
-            </p>
-        </section>
+       <div class="titulo-educacao">
+        <h3 class="paragrafo-titulo">A Importância da Educação Infantil</h3>
+        <p class="paragrafo">A educação infantil desempenha um papel fundamental no desenvolvimento global da criança, estimulando aspectos cognitivos, emocionais e sociais. Durante essa fase, os pequenos descobrem o mundo ao seu redor por meio de atividades lúdicas, despertando curiosidade e criatividade. O ambiente escolar seguro e acolhedor favorece a interação social, fortalecendo a empatia e a cooperação. O cérebro infantil está em constante desenvolvimento, formando conexões neurais essenciais para a aprendizagem futura. Estudos mostram que crianças que recebem uma educação de qualidade nessa etapa têm mais facilidade para aprender e desenvolvem inteligência emocional. A metodologia deve priorizar o brincar e a exploração, contribuindo para o desenvolvimento da linguagem, do raciocínio lógico e da coordenação motora. Os professores atuam como mediadores, incentivando a autonomia e o pensamento crítico. Investir na educação infantil significa proporcionar uma base sólida para um futuro de sucesso, felicidade e inclusão social.</p>
+       </div>
+       <div class="galeria-titulo">
+        <h2 class="titulo-galeria">Galeria de Imagens</h2>
+        <div class="linha-amarela-galeria"></div>
+        </div>
+
+        <!--Carrossel-->
+         <!-- Slider main container -->
+         <div class="carrossel__container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="../img/galeriadefotos1.svg" alt="imagem do laboratorio" class="imagem-estrutura">
+                       
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../img/galeriadefotos2.svg" alt="imagem da biblioteca" class="imagem-estrutura">
+                        
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../img/galeriadefotos3.svg" alt="imagem da Quadra poliesportiva" class="imagem-estrutura">
+                       
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../img/galeriadefotos1.svg" alt="imagem da aula de karate" class="imagem-estrutura">
+                      
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../img/galeriadefotos2.svg" alt="imagem do laboratorio" class="imagem-estrutura">
+                       
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../img/galeriadefotos3.svg" alt="imagem do laboratorio" class="imagem-estrutura">
+                       
+                    </div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+</section>
+<section class="container-professor">
+    <div class="professor-titulo">
+        <h2 class="titulo-galeria">Professores</h2>
+        <div class="linha-amarela-professores"></div>
+        </div>
+        <div class="professores">
+            <div class="professor">
+                <img src="../img/professor1.svg" alt="imagem do professor">
+                <p class="professor-info">Professora Ana Carla <br>Disciplina: Geografia</p>
+            </div>
+            <div class="professor">
+                <img src="../img/professor2.svg" alt="imagem do professor">
+                <p class="professor-info">Professora Sabrina Santos <br>Disciplina: Historia</p>
+            </div>
+            <div class="professor">
+                <img src="../img/professor3.svg" alt="imagem do professor">
+                <p class="professor-info">Professor Gustavo Rodrigues <br>Disciplina: Matematica</p>
+            </div>
+            <div class="professor">
+                <img src="../img/professor4.svg" alt="imagem do professor">
+                <p class="professor-info">Professora Lucia Regina <br>Disciplina: Ciências</p>
+            </div>
+        </div>
+    </section>
+
+
+       
 
         <!--Footer!-->
         <footer>
@@ -116,6 +186,26 @@
                 </div>
             </section>
         </footer>
-    </main>
+    
+    <script src="/javascript/script.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    
+    <!--função da seta do carrossel-->
+    <script>
+    const swiper = new Swiper('.swiper', {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        loop: true, // Faz o carrossel rodar infinitamente
+    navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+},
+pagination: {
+    clickable: true, // Permite clicar nos pontos de paginação
+},
+        
+    });
+
+</script>
 </body>
 </html>
