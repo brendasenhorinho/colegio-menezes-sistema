@@ -42,21 +42,26 @@ body{
   font-weight: 600;
   font-size: 26px;
   margin-bottom: 1.5em;
+  margin-left: 1em;
 }
 
 .paragrafo{
   font-size: 20px;
   font-weight: 500;
+  margin-right: 3em;
+  margin-left: 1em;
 }
 
 .titulo-educacao {
   margin-bottom: 2em;
+ 
 }
 
 .titulo-galeria{
   font-size: 26px;
   font-weight: 600;
   color: var(--azul-escuro);
+  margin-left: 1em;
 }
 .linha-amarela-galeria{
   width: 13.5%; 
@@ -64,6 +69,7 @@ body{
   background-color: var(--amarelo);
   margin-bottom: 2em;
   margin-top: 5px;
+  margin-left: 1.8em;
 }
 
 /* professor*/
@@ -73,6 +79,7 @@ body{
   background-color: var(--amarelo);
   margin-bottom: 2em;
   margin-top: 5px;
+  margin-left: 1em;
 }
 .professor-titulo{
   font-size: 26px;
