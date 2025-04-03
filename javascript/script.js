@@ -74,3 +74,10 @@ function animarContagem(elemento, valorFinal, duracao) {
   }, 16); // Aproximadamente 60 frames por segundo
 }
 /*formando talentos*/
+
+/* whatsap*/
+document.addEventListener("DOMContentLoaded", function() {
+  let btn = document.querySelector(".whatsapp-float");
+  btn.style.transform = "scale(0)";
+  setTimeout(() => btn.style.transform = "scale(1)", 500);
+});
