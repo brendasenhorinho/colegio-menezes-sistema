@@ -23,8 +23,7 @@ body{
     color: var(--azul-escuro);
     margin-bottom: 1rem; 
     text-transform: uppercase;
-    text-align: center; 
-    font-family: 'Montserrat', sans-serif; 
+    text-align: center;  
   }
 
   .linha-amarela {
@@ -36,33 +35,77 @@ body{
   .titulo-galeria{
     font-size: 2rem;
     color: var(--azul-escuro);
-    margin-bottom: 1rem; 
     text-transform: uppercase;
-    text-align: center; 
-    font-family: 'Montserrat', sans-serif; 
+    margin-left: 1em;
   }
-  .linha-eventos{
-    width: 7%;
+ 
+  .linha-amarela-galeria{
+    display: flex;
+    justify-content: left;
+    width: 7%; 
     height: 5px;
-    background-color: #ffd700; /* Amarelo */
-  
-    
-
+    background-color: var(--amarelo);
   }
-  .imagem-eventos{
-    width: 400px;
-  flex-shrink: 0;
+ .divisao-container{
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-
-  }
+  flex-direction: column;
   
+ }
+  
+.container-imagens{
+
+  margin-top: 2em;
+  display: flex;
+  justify-content: space-around; /* Distribui os itens uniformemente */
+  align-items: center; /* Alinha os itens verticalmente */
+  flex-wrap: wrap; /* Permite quebra de linha se necessário */
+  gap: 20px; /* Espaço entre os elementos */
+  text-align: center; /* Centraliza o texto dentro de cada item */
+  width: 100%; /* Garante que o contêiner ocupe toda a largura disponível */
+  
+}
+.paragrafo-evento{
+  width: 97%;
+  background: linear-gradient(to right, #0068D1 0%, #00356B 100%);
+  color: var(--branco);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 20px;   
+  text-align: center; /* Centraliza o texto */
+}
 
 
+.imagem-eventos{
+  display: flex;
+  flex-direction: column; /* Organiza imagem e texto em coluna */
+  align-items: center; /* Centraliza os itens na coluna */
+  max-width: 400px; /* Define um limite de largura */
+  
+  
+}
 
+.imagem-eventos p {
+  margin-top: -3px;
+  margin-bottom: 2em;
+}
 
+.container-videos{
+  display: flex;
+  margin-top: 3em ;
+  margin-bottom: 7em;
+  justify-content: space-evenly;
+}
 
+.calendario{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10em;
+  margin-bottom: 1em;
+}
 
 
 footer {
