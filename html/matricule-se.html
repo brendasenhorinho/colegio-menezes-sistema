@@ -11,265 +11,47 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles/carrossel.css">
     <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../styles/matricule-se.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://unpkg.com/scrollreveal"></script>
-    <style>
-        /* matricule-se.css */
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f5f5f5;
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
-
-        /* Cabeçalho */
-        .cabecalho {
-            display: flex;
-            flex-direction: column;
-            width: 100vw;
-        }
-
-        .topo-cabecalho {
-            background-color: var(--vermelho);
-            color: var(--branco);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0.5em;
-            font-size: 12px;
-            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), 4px 4px 10px rgba(0, 0, 0, 0.15);
-        }
-
-        .contatos {
-            display: flex;
-            align-items: center;
-            gap: 0.8em;
-            margin-left: 6em;
-        }
-
-        .social-icones {
-            display: flex;
-            align-items: center;
-            gap: 1em;
-            margin-right: 6em;
-        }
-        
-        .navbar {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        
-        .nav-cabecalho {
-            display: flex;
-            background-color: var(--azul-claro);
-            text-align: justify;
-        }
-
-        .nav-links {
-            list-style: none;
-            display: flex;
-            gap: 70px;
-            font-size: 19px;
-        }
-
-        .nav-links li {
-            position: relative;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            color: var(--branco);
-            padding: 10px 15px;
-            display: block;
-            margin-top: 15px;
-            transition: 0.3s;
-        }
-        
-        .nav-links a:hover,
-        .nav-links a:focus,
-        .nav-links a.active {
-            color: var(--amarelo);
-            border-bottom: 1px solid var(--amarelo);
-        }
-
-        .dropdown-menu {
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background: var(--azul-claro);
-            color: var(--branco);
-            display: none;
-            min-width: 150px;
-            list-style: none;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        }
-
-        .dropdown:hover .dropdown-menu {
-            display: block;
-        }
-
-        /* Container principal */
-        .container-form {
-            max-width: 800px;
-            margin: 50px auto;
-            background-color: #ffffff;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Título do formulário */
-        .container-form h2 {
-            text-align: center;
-            margin-bottom: 30px;
-            font-size: 28px;
-            color: #004080;
-        }
-
-        /* Estilização dos fieldsets */
-        fieldset {
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            padding: 20px;
-            margin-bottom: 30px;
-        }
-
-        legend {
-            font-weight: bold;
-            color: #004080;
-            padding: 0 10px;
-        }
-
-        /* Estilização dos grupos de formulário */
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        label {
-            display: block;
-            font-weight: 500;
-            margin-bottom: 5px;
-        }
-
-        input[type="text"],
-        input[type="email"],
-        input[type="tel"],
-        input[type="date"],
-        select {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-            font-size: 14px;
-        }
-
-        input[type="text"]::placeholder {
-            font-style: italic;
-        }
-
-        /* Radio e Checkbox */
-        .radio-group,
-        .checkbox-group {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-        }
-
-        .radio-group label,
-        .checkbox-group label {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            font-size: 14px;
-        }
-
-        /* Botão de envio */
-        .btn-enviar {
-            width: 100%;
-            background-color: #004080;
-            color: white;
-            padding: 12px;
-            font-size: 16px;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .btn-enviar:hover {
-            background-color: #003060;
-        }
-
-        /* Responsivo */
-        @media (max-width: 600px) {
-            .container-form {
-                padding: 20px;
-            }
-
-            .radio-group,
-            .checkbox-group {
-                flex-direction: column;
-            }
-            
-            .topo-cabecalho {
-                flex-direction: column;
-                gap: 10px;
-            }
-            
-            .nav-links {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            
-            .contatos {
-                margin-left: 1em;
-            }
-            
-            .social-icones {
-                margin-right: 1em;
-            }
-        }
-    </style>
+   
+      
 </head>
 <body>
     <header class="cabecalho">
         <div class="topo-cabecalho">
             <div class="contatos">
-                <img src="../img/telephone.svg" alt="icone telefone de contato">
+                <img src="/img/telephone.svg" alt="icone telefone de contato">
                 <span class="contato-info">3442-4767</span>
-                <img src="../img/envelope.svg" alt="icone email de contato">
+                <img src="/img/envelope.svg" alt="icone email de contato">
                 <span class="contato-info">email/Colegiomenezes1@hotmail.com</span>
             </div>
             <div class="social-icones">
                 <a href="https://www.facebook.com/colegiomenezes1/">
-                    <img src="../img/facebook.svg" alt="icone do facebook">
+                    <img src="/img/facebook.svg" alt="icone do facebook">
                 </a>
                 <a href="https://www.instagram.com/colegiomenezes1/">
-                    <img src="../img/instagram.svg" alt="icone do instagram">
+                    <img src="/img/instagram.svg" alt="icone do instagram">
                 </a>
                 <a href="#">
-                    <img src="../img/whatsapp.svg" alt="icone do whatsapp">
+                    <img src="/img/whatsapp.svg" alt="icone do whatsapp">
                 </a>
             </div>
         </div>
-
         <div class="nav-cabecalho">
             <nav class="navbar">
                 <ul class="nav-links">
                     <div class="logo">
-                        <img src="../img/logoColegioMenezes.svg" alt="Logo Colegiomenezes1">
+                        <img src="/img/logoColegioMenezes.svg" alt="Logo Colegiomenezes1">
                     </div>
-                    
-                    <li><a href="index.html" class="active">Início</a></li>
-                    <li><a href="/html/quemsomos.html">Quem Somos</a></li>
+                    <li><a href="/index.html" >Início</a></li>
+                    <li><a href="/html/quemsomos.html" >Quem Somos</a></li>
                     <li class="dropdown">
-                        <a href="/html/educacaoinfantil.html">Educação Infantil </a>
+                        <a href="/html/educacaoinfantil.html">Educação Infantil</a>
                     </li>
                     <li class="dropdown">
                         <a href="#">Ensino Fundamental
-                            <img src="../img/seta.svg" alt="icone seta">
+                            <img src="/img/seta.svg" alt="icone seta">
                         </a>
                         <ul class="dropdown-menu">
                             <li><a href="/html/fundamental1.html">Ensino Fundamental I</a></li>
@@ -279,16 +61,16 @@
                     <li><a href="/html/ensinomedio.html">Ensino Médio</a></li>
                     <li><a href="/html/eventos.html">Eventos</a></li>
                     <li><a href="/html/estrutura.html">Estrutura</a></li>
-                    <li><a href="/html/matricule-se.html">Matricule-se</a></li>                        
+                    <li><a href="/html/matricule-se.html" class="active">Matricule-se</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main>
+    <main class="main-matricula">
         <section class="formulario-matricula">
             <div class="container-form">
-                <h2>Formulário de Matrícula</h2>
+                <h2>Formulário de Pré-Matrícula</h2>
                 <form action="https://formsubmit.co/Colegiomenezes1@hotmail.com" method="POST">
                     <!-- DADOS DO ALUNO -->
                     <fieldset>
@@ -304,8 +86,8 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="documento">RG ou CPF*</label>
-                            <input type="text" id="documento" name="documento" required>
+                            <label for="documento">RG ou CPF</label>
+                            <input type="text" id="documento" name="documento">
                         </div>
 
                         <div class="form-group">
@@ -345,20 +127,33 @@
                             <label for="serie">Série/Ano Desejado*</label>
                             <select id="serie" name="serie" required>
                                 <option value="">Selecione</option>
+                                
+                                <!-- Educação Infantil -->
+                                <option value="Berçário">Berçário (Ensino Infantil)</option>
+                                <option value="Maternal I">Maternal I (Ensino Infantil)</option>
+                                <option value="Maternal II">Maternal II (Ensino Infantil)</option>
+                                <option value="Pré I">Pré I (Ensino Infantil)</option>
+                                <option value="Pré II">Pré II (Ensino Infantil) </option>
                             
+                                <!-- Ensino Fundamental I -->
                                 <option value="1º Ano EF">1º Ano (Fundamental I)</option>
                                 <option value="2º Ano EF">2º Ano (Fundamental I)</option>
                                 <option value="3º Ano EF">3º Ano (Fundamental I)</option>
                                 <option value="4º Ano EF">4º Ano (Fundamental I)</option>
                                 <option value="5º Ano EF">5º Ano (Fundamental I)</option>
+                            
+                                <!-- Ensino Fundamental II -->
                                 <option value="6º Ano EF">6º Ano (Fundamental II)</option>
                                 <option value="7º Ano EF">7º Ano (Fundamental II)</option>
                                 <option value="8º Ano EF">8º Ano (Fundamental II)</option>
                                 <option value="9º Ano EF">9º Ano (Fundamental II)</option>
+                            
+                                <!-- Ensino Médio -->
                                 <option value="1º Ano EM">1º Ano (Ensino Médio)</option>
                                 <option value="2º Ano EM">2º Ano (Ensino Médio)</option>
                                 <option value="3º Ano EM">3º Ano (Ensino Médio)</option>
                             </select>
+                            
                         </div>
 
                         <div class="form-group">
@@ -395,5 +190,45 @@
             </div>
         </section>
     </main>
+    <footer>
+        <section class="footer1">
+            <div id="footer_content">
+                <div id="footer_contacts">
+                    <div class="collun-footer">
+                        <div class="LogoFooter"> <img src="/img/logoColegioMenezes.svg" alt="Logo do Colegio menezes1"></div>
+                    </div>
+                    <div class="collun-footer">
+                        <h3>Sobre nós</h3>
+                        <p>Somos o Colégio Menezes, dedicados à educação de qualidade que molda futuros promissores.</p>
+                    </div>
+                    <div class="collun-footer">
+                        <h3>Sede</h3>
+                        <p>R. Carnaíba, 64 - Nova Descoberta, Recife - PE, 52090-121</p>
+                    </div>
+                    <div class="collun-footer">
+                        <h3>Entre em contato</h3>
+                        <div id="footer_social_media">
+                            <a href="#" class="footer-link" id="facebook">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                            <a href="#" class="footer-link" id="instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#" class="footer-link" id="whatsapp">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Faixa azul -->
+            <div id="footer_blue_stripe">
+                <p>&#169; Todos os direitos reservados</p>
+            </div>
+        </section>
+    </footer>
+    <a href="https://wa.me/5581986181646" class="whatsapp-float" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
 </body>
 </html>
