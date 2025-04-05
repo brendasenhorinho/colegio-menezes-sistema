@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+/* Definição das cores */
+:root {
+  --vermelho: #921233; /* Vermelho corrigido */
+  --amarelo: #ffcc00; /* Amarelo corrigido */
+  --azul-escuro: #2b4d99; /* Azul corrigido */
+  --branco: #ffffff;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif; 
+}
+
+.titulo-linha {
+    text-align: center;
+    margin: 3rem auto; 
+    max-width: 1200px; 
+    padding: 0 1rem; 
+  }
+  
+  
+  .titulo-banner {
+    font-size: 2rem;
+    color: var(--azul-escuro);
+    margin-bottom: 1rem; 
+    text-transform: uppercase;
+    text-align: center; 
+    font-family: 'Montserrat', sans-serif; 
+  }
+  
+  
+  .linha-amarela {
+    width: 30%; 
+    height: 5px;
+    background-color: var(--amarelo);
+    margin: 0 auto;
+  }
+
+  
