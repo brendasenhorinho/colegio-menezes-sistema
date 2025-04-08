@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  --vermelho: #921233;
+  --azul-claro: #4781ff;
+  --branco: #ffffff;
+  --amarelo: #ffcc00;
+  --font-principal: "Montserrat";
+  --azul-escuro: #023e73; /*extraí a cor da h2 "fases educacionais" no figma*/
+}
+
+body{
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+    font-family: var(--font-principal);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+  color: var(--branco);
+  font-weight: 700;
+  padding: 1.5rem 1.8rem;
+  border-radius: 20px;
+  text-decoration: none;
+  background: linear-gradient(to right, #dd2553 0%, #921233 100%);
+  float: left;
+  margin-top: 1em;
+  align-items: center;
+}
