@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mensagem = htmlspecialchars(trim($_POST["message"]));
 
     // Define para onde o e-mail será enviado (coloque o e-mail do colégio aqui)
-    $destinatario = "emaildocolegio@exemplo.com";
+    $destinatario = "brendamirellisenhorinho@gmail.com";
 
     // Assunto do e-mail
     $assunto = "Novo contato do site";
