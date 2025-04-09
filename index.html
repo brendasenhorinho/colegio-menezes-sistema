@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="styles/carrossel.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="icon" type="image/png" href="img/iconedapagina.png">
     <script src="https://unpkg.com/scrollreveal"></script>
 
 </head>
@@ -64,7 +64,7 @@
                         <li><a href="/html/ensinomedio.html">Ensino Médio</a></li>
                         <li><a href="/html/eventos.html">Eventos</a></li>
                         <li><a href="/html/estrutura.html">Estrutura</a></li>
-                        <li><a href="/html/matricule-se.html">Matricule-se</a></li>                        
+                        <li><a href="/html/matricule-se.html">Pré-Matricula</a></li>                        
                     </ul>
                 </nav>
                 
@@ -325,7 +325,7 @@
             <!--COMEÇO DO FORMULARIO-->
             <div>
                 <h1 class="titulo-formulario">Entre Em Contato</h1>
-                <form action="https://formsubmit.co/rebecasenhorinho015@gmail.com" method="POST" class="form">
+                <form action="./php/enviar.php" method="POST" class="form">
                     <label for="name" class="label-formulario">Nome:</label>
                     <input type="text" name="name" class="input-formulario" required>
                     <label for="email" class="label-formulario">Email:</label>
@@ -334,9 +334,10 @@
                     
                     <textarea  name="message" class="textarea-formulario" placeholder="Escreva Aqui" required></textarea>
                     <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_next" value="http://127.0.0.1:5501/html/obrigado.html">
+                
                     <button type="submit" class="button-formulario">Enviar</button>
                </form>
+               <h1 class="titulo-formulario">Entre Em Contato</h1>
 
             </div>
 

@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="styles/carrossel.css">
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="../styles/matricule-se.css">
+    <link rel="icon" type="image/png" href="../img/iconedapagina.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://unpkg.com/scrollreveal"></script>
    
@@ -61,7 +62,7 @@
                     <li><a href="/html/ensinomedio.html">Ensino Médio</a></li>
                     <li><a href="/html/eventos.html">Eventos</a></li>
                     <li><a href="/html/estrutura.html">Estrutura</a></li>
-                    <li><a href="/html/matricule-se.html" class="active">Matricule-se</a></li>
+                    <li><a href="/html/matricule-se.html" class="active">Pré-Matricula</a></li>
                 </ul>
             </nav>
         </div>
@@ -86,8 +87,8 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="documento">RG ou CPF</label>
-                            <input type="text" id="documento" name="documento">
+                            <label for="documento">CPF</label>
+                            <input type="text" id="documento" name="documento" required>
                         </div>
 
                         <div class="form-group">
@@ -96,8 +97,8 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="email-aluno">E-mail*</label>
-                            <input type="email" id="email-aluno" name="email-aluno" required>
+                            <label for="email-aluno">E-mail(Opcional)</label>
+                            <input type="email" id="email-aluno" name="email-aluno">
                         </div>
                     </fieldset>
 
@@ -107,6 +108,16 @@
                         <div class="form-group">
                             <label for="nome-responsavel">Nome Completo*</label>
                             <input type="text" id="nome-responsavel" name="nome-responsavel" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="documento">CPF</label>
+                            <input type="text" id="documento" name="documento" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="nascimento">Data de Nascimento*</label>
+                            <input type="date" id="nascimento" name="nascimento" required>
                         </div>
 
                         <div class="form-group">
