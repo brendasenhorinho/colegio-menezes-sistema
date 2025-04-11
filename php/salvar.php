@@ -11,7 +11,7 @@ echo '</pre>';
 $db = (new Database())->getConnection();
 
 $aluno = new Aluno($_POST['documento'], $_POST['nome-aluno'], $_POST['email-aluno'], $_POST['nascimento'], $_POST['telefone-aluno']);
-$responsavel = new Responsavel($_POST['documento-responsavel'], $_POST['nome-responsavel'], $_POST['email-responsavel'], $_POST['nascimento-responsavel'], $_POST['telefone-responsavel']);
+$responsavel = new Responsavel($_POST['documento-responsavel'], $_POST['nome-responsavel'], $_POST['email-responsavel'], $_POST['nascimento-responsavel'], $_POST['telefone-responsavel'], $_POST['documento'] );
 $detalhes = new DetalhesdaMatricula(
     $_POST['serie'],
     $_POST['turno'],
