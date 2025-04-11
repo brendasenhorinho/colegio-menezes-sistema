@@ -1,20 +1,25 @@
 <?php
 class Database {
-    private $host = "localhost:3307";
-    private $db_name = "crud_poo";
+    private $host = "localhost:3306";
+    private $db_name = "mydb";
     private $username = "root";
-    private $password = "1234";
+    private $password = "101513rbmm";
     public $conn;
 
     public function getConnection() {
         $this->conn = null;
         try {
-            $this->conn = new PDO("mysql:host=" . $this->host . ";dbname=" . $this->db_name, $this->username, $this->password);
+            $this->conn = new PDO(
+                "mysql:host=" . $this->host . ";dbname=" . $this->db_name,
+                $this->username,
+                $this->password
+            );
             $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            echo "Conexão realizada com sucesso!<br>";
         } catch(PDOException $exception) {
-            echo "Connection error: " . $exception->getMessage();
+            echo "Erro de conexão: " . $exception->getMessage() . "<br>";
         }
         return $this->conn;
     }
 }
-?>
+
