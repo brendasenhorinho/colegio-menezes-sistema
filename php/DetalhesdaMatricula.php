@@ -19,18 +19,18 @@ class DetalhesdaMatricula {
 
     public function salvar($conn) {
         $query = "INSERT INTO detalhesdamatricula 
-                  (Serie, Turno, Checkhistorico, Canaldeindicacao, Aluno_Cpf, Responsavel_Cpf)
+                  (serie, turno, checkhistorico, canaldeinformacao, aluno_cpfaluno, responsavel_cpfresponsavel)
                   VALUES 
-                  (:serie, :turno, :checkHistorico, :canalDeIndicacao, :alunoCpf, :responsavelCpf)";
+                  (:serie, :turno, :checkhistorico, :canaldeinformacao, :aluno_cpfaluno, :responsavel_cpfresponsavel)";
         
         $stmt = $conn->prepare($query);
 
         $stmt->bindParam(':serie', $this->serie);
         $stmt->bindParam(':turno', $this->turno);
-        $stmt->bindParam(':checkHistorico', $this->checkHistorico);
-        $stmt->bindParam(':canalDeIndicacao', $this->canalDeIndicacao);
-        $stmt->bindParam(':alunoCpf', $this->alunoCpf);
-        $stmt->bindParam(':responsavelCpf', $this->responsavelCpf);
+        $stmt->bindParam(':checkhistorico', $this->checkHistorico);
+        $stmt->bindParam(':canaldeinformacao', $this->canalDeIndicacao);
+        $stmt->bindParam(':aluno_cpfaluno', $this->alunoCpf);
+        $stmt->bindParam(':responsavel_cpfresponsavel', $this->responsavelCpf);
 
         return $stmt->execute();
     }
