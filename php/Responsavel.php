@@ -20,16 +20,16 @@ class Responsavel {
     }
 
     public function salvar($conn) {
-            $query = "INSERT INTO responsavel (Cpf, Nome, Email, DataNasc, Telefone, Aluno_Cpf)
-            VALUES (:cpf, :nome, :email, :dataNasc, :telefone, :alunoCpf)";
+            $query = "INSERT INTO responsavel (cpfresponsavel, nome, email, data_nasc, telefone, aluno_cpfaluno)
+            VALUES (:cpfresponsavel, :nome, :email, :data_nasc, :telefone, :aluno_cpfaluno)";
     $stmt = $conn->prepare($query);
 
-    $stmt->bindParam(':cpf', $this->cpf);
+    $stmt->bindParam(':cpfresponsavel', $this->cpf);
     $stmt->bindParam(':nome', $this->nome);
     $stmt->bindParam(':email', $this->email);
-    $stmt->bindParam(':dataNasc', $this->DataNasc);
+    $stmt->bindParam(':data_nasc', $this->DataNasc);
     $stmt->bindParam(':telefone', $this->telefone);
-    $stmt->bindParam(':alunoCpf', $this->alunoCpf);
+    $stmt->bindParam(':aluno_cpfaluno', $this->alunoCpf);
 
         return $stmt->execute();
     }
