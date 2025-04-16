@@ -15,7 +15,7 @@ class Database {
                 $this->password
             );
             $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            // echo "Conexão realizada com sucesso!<br>";
+            echo "Conexão realizada com sucesso!<br>";
         } catch(PDOException $exception) {
             echo "Erro de conexão: " . $exception->getMessage() . "<br>";
         }
